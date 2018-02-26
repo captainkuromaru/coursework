@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <title> Ciphers, man... </title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <style>
+// #cb95ab for buttons
+  </style>
+  </head>
+  <body>
+  <script src="./js/rotary.js"></script> 
+ <div id="encode" class="box"> 
+<h1>Original text</h1>
+<textarea id="encodetext" wrap="soft">
+Please type your message.
+</textarea>
+</div>
+
+<div id="buttons">
+<button name="btnEncode" onClick="encode()"> Encode </button>
+<br>
+<input id="rotary" type="text" style="width: 100%">
+<br>
+<button name="btnDecode" onClick="decode()"> Decode </button>
+</div>
+
+<div id="decode" class="box">
+<h1> Encoded text </h1>
+<textarea id="decodetext" wrap="soft">
+Please type your message.
+</textarea>
+</div>
+  <div id="popup">
+<button type="button" onclick="popUpClose()">X</button>
+<div id="popuptext"></div>
+</div>
+<ul class="mumu">
+  <li><a href="./rotary.html">Caesar's cyphre</a></li>
+  <li><a href="./block.html">Block cyphre</a></li>
+  <li><a href="./index.html">Home</a></li>
+  <li><a href="#contact" onClick="popUpOpen('contact')">Contact</a></li>
+  <li><a href="#" onClick="popUpOpen('about')">About</a></li>
+  <li><a href="#" onClick="popUpOpen('help')">Help</a></li>
+</ul>
+
+  </body>
+</html>

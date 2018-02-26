@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Ciphers, man... </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style>
+      #introduction {
+        margin-left: 30%;
+        margin-top: 3%;
+      }
+    </style>
+  </head>
+  <body>  
+
+<ul class="mumu">
+  <li><a href="./rotary.html">Caesar's cyphre</a></li>
+  <li><a href="./block.html">Block cyphre</a></li>
+  <li><a href="./index.html">Home</a></li>
+  <li><a href="#contact" onClick="popUpOpen('contact')">Contact</a></li>
+  <li><a href="#" onClick="popUpOpen('about')">About</a></li>
+  <li><a href="#" onClick="popUpOpen('help')">Help</a></li>
+  </ul>
+
+  <div id="popup">
+<button type="button" onclick="popUpClose()">X</button>
+<div id="popuptext"></div>
+</div>
+<script>
+function popUpClose() {
+document.getElementById("popup").style.visibility="hidden";
+document.getElementById("introduction").style.visibility="visible";
+}
+
+function popUpOpen(what) {
+  document.getElementById("popup").style.visibility="visible";
+  document.getElementById("introduction").style.visibility="hidden";
+  if (what == "about") {
+    document.getElementById("popuptext").innerHTML="<h1>Cypher your text or find out what the message was!</h1> <h3>First of all, welcome to my website!</h3><p> This website is my coursework for Web Tech module at Edinburgh Napier. We've been asked to code a website with a few simple cyphers to show ourunderstanding of HTML, CSS, and JavaScript.  </p> <p>If you are my lecturer, please do enjoy your experience here and mark me well. :)  <br>If you are a random visitor, enjoy your time here and try some of the offered cyphers.</p>"
+  }
+  if (what=="help") {
+    document.getElementById("popuptext").innerHTML="<p> Please use buttons encode and decode for using cypher for original text and converting the cyphered text to the original message respectively. The field between buttons is for key.</p>"
+  }
+  if (what == "contact") {
+    document.getElementById("popuptext").innerHTML="<p> If you'd like to contact me, you can use my universtiy email 40286967(at) live (dot) na p ier.co(dot)(uk)</p> <p> If you already know me, please feel free to give me feedback on social media. Thank you.</p>"
+  }
+}
+</script>
+
+    <div id="introduction" class="box">
+      <h1>Cypher your text or find out what the message was!</h1>
+      <h3>
+      First of all, welcome to my website!
+      <h3>
+      <p>
+        This website is my coursework for Web Tech module at Edinburgh Napier.
+        We've been asked to code a website with a few simple cyphers to show our
+        understanding of HTML, CSS, and JavaScript.  
+      </p>
+      
+      <p>
+        If you are my lecturer, please do enjoy your experience here and mark me well. :)  <br>
+        If you are a random visitor, enjoy your time here and try some of the offered cyphers. 
+      </p>
+      
+      <p>
+        <a href="./rotary.html"> Caesar's cypher </a> <a href="./block.html"> Block cypher </a>
+      </p>
+    </div>                          
+  </body>
+</html>
